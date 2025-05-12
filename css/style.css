@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eae4ff;
+}
+.header {
+    background: linear-gradient(90deg, rgb(0, 18, 58) 0%, rgb(0, 37, 117) 35%, rgba(1, 21, 173, 0.675) 100%);
+    color: rgb(230, 230, 230);
+    padding: 35px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.header img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+}
+.nav {
+    background-color: #584ad6;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+.nav div {
+    display: inline-block;
+    color: white;
+    margin: 15px;
+    cursor: pointer;
+}
+.content-wrapper {
+    display: flex;
+    width: 95%;
+    margin-top: 20px;
+    text-align: justify;
+}
+.main-content {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: justify;
+
+}
+.sidebar {
+    width: 20%;
+    background-color: #867efa;
+    padding: 30px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.iframe{
+    width: 100%;
+    height: 500px;
+    border: none;
+    
+}
+.footer {
+    background-color: #080169;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+/* Menu codigo*/
+
+#encabezado {
+    position: relative; 
+}
+
+#encabezado .menu {
+    width: 200px; 
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+    background: #205fb2;
+
+    position: absolute;  
+    right: 0;             
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    position: relative;
+}
+
+.menu {
+    display: block;
+}
+
+
+nav a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    transition: .4s;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+
+nav li ul {
+    font-size: 17px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease;
+    background: #2c88bd;
+}
+
+
+nav li:hover > ul {
+    max-height: 500px;
+}
+
+
+.menu ul ul {
+    right: 100%;
+    top: 0;
+    position: absolute;
+}
+
+nav li li {
+    width: 155px;
+}
+
+
+/*img*/
+.contenedor {
+            display: flex;
+            align-items: center; /* Alinear elementos verticalmente */
+        }
+        .contenedor img {
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+        }
+
+/* tabla 1 */
+
+
+h1 {
+    color: #2a3a5c;
+    margin-bottom: 30px;
+}
+
+.tabla-economia {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.tabla-economia th, .tabla-economia td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-economia th {
+    background-color: #4e4caf;
+    color: white;
+}
+
+.tabla-economia tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Lista Ordenada*/
+.lista-descubrimientos {
+    text-align: left;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    background-color: #8e93c2;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-descubrimientos li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/*Tabla dosssss*/
+.table-container {
+    overflow-x: auto;
+}
+
+.tabla-cronologia {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-cronologia th, .tabla-cronologia td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabla-cronologia th {
+    background-color: #2980b9;
+    color: white;
+    font-size: 18px;
+}
+
+.tabla-cronologia tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla-cronologia td {
+    font-size: 16px;
+    color: #333;
+}
+
+/* figuras */
+
+.lista-valle-indo {
+    list-style-type: square;
+    background-color: #ffffff;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.lista-valle-indo li {
+    margin-bottom: 10px;
+}
+
+
+/*formulario*/
+
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea, button{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #8ce9f0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea{
+    resize: none;
+}
+button{
+    background-color: rgb(85, 144, 212);
+    color: darkkhaki;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    
+}
+button:hover{
+    background-color: rgb(0, 10, 100);
+}
+
+/* adaptador*/
+
+@media (max-width: 768px){
+    form{
+        padding: 10px;
+    }
+
+    input, select, textarea, button{
+        font-size: 14px;
+    }
+}
